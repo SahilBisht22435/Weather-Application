@@ -1,0 +1,148 @@
+.quality {
+  background-image: url('https://i.pinimg.com/564x/21/35/63/21356305847e62c41018bf1dab2b487c.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.air-quality-container {
+  background: rgba(106, 17, 203, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.air-quality-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #ffd700;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 12px 20px;
+  border-radius: 25px 0 0 25px;
+  border: 2px solid #ffd700;
+  border-right: none;
+  outline: none;
+  width: 300px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  border-radius: 0 25px 25px 0;
+  border: 2px solid #ffd700;
+  border-left: none;
+  background: #ffd700;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition:  color 0.3s;
+}
+
+.search-bar button:hover {
+  background: #e5b700;
+  color: #fff;
+}
+
+.air-quality-data {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.aqi {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.components {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.components p {
+  flex: 1 1 45%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.components p:hover{
+  transform: scale(1.04); 
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px;
+  color: #ff6347;
+}
+
+@media (max-width: 600px) {
+  .search-bar input, .search-bar button {
+    width: 100%; 
+    border-radius: 0;  
+  }
+
+  .navbar {
+    flex-direction: column; 
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .components p {
+    flex-basis: 100%;  
+  }
+}
